@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的音频</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: sans-serif;
+        }
+        .player {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        audio {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="player">
+        <h1>生日快乐伍宝宝</h1>
+        <!-- 关键：确保 src 这里的文件名和您上传的音频文件名称一致 -->
+        <audio controls autoplay>
+            <source src="lucky.mp3" type="audio/mpeg">
+            您的浏览器不支持音频播放功能。
+        </audio>
+    </div>
+</body>
+</html>
